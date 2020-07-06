@@ -4,5 +4,5 @@ console.log(parallax);
 
 window.addEventListener("scroll", () => {
     let offset = window.pageYOffset;
-    parallax[0].style.backgroundPositionY = offset * 0.75 + "px";
+    parallax[0].style.backgroundPositionY = offset * 0.15 + "px";
 });
