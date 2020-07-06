@@ -1,0 +1,13 @@
+/*  Global  */
+@import url("./partials/normalize.css");
+@import url("./partials/typography.css");
+
+/*  Layout  */
+@import url("./partials/sections.css");
+@import url("./partials/grid.css");
+@import url("./partials/flex.css");
+
+/*  Components  */
+@import url("./partials/nav.css");
+@import url("./partials/card.css");
+@import url("./partials/text.css");

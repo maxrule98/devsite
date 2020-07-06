@@ -1,0 +1,15 @@
+.grid {
+    display: grid;
+    gap: 1em;
+    /*  Grid Coneent Width  */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 800px) {
+    .grid--2 {
+        grid-template-columns: repeat(auto-fit, minmax(calc(500px - 1em), 1fr));
+    }
+}

@@ -1,0 +1,21 @@
+.text {
+    /*  Text Coneent Width  */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.text--left {
+    text-align: left;
+}
+
+.text--center {
+    justify-items: center;
+    text-align: center;
+}
+
+.text--right {
+    text-align: right;
+}
