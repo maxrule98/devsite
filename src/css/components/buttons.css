@@ -2,16 +2,26 @@
     border-radius: var(--border-radius);
     background: none;
     border: none;
-    padding: 1em 3em;
+    cursor: pointer;
+    width: max-content;
 }
 
 .btn--highlight {
+    padding: 1em 3em;
     color: var(--lightest);
     background: var(--highlight);
+    transition: box-shadow var(--transition--hover);
+}
+.btn--highlight:hover,
+.btn--highlight:focus {
+    background:var(--highlight-hover);
+    box-shadow: var(--box-shadow);
+    transition: box-shadow var(--transition--hover);
 }
 
 .btn--advance {
+    border-radius: 50%;
     padding: 1em;
-    color: var(--lightest);
-    background: var(--highlight);
+    background: var(--light);
+    color: var(--highlight);
 }

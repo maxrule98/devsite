@@ -24,6 +24,11 @@
     grid-column: span 12;
 }
 
+.col--light {
+    padding: 1em;
+    background: var(--light);
+}
+
 .col--lightest {
     padding: 1em;
     background: var(--lightest);
