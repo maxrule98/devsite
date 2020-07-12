@@ -3,7 +3,8 @@
     transition: all var(--transition--hover);
 }
 
-.card:hover  {
+.card:hover,
+.card:focus  {
     transform: scale(0.95);
     box-shadow: var(--box-shadow);
     transition: all var(--transition--hover);
