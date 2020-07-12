@@ -533,12 +533,13 @@ form {
 }
 .card {
     position: relative;
-    transition: box-shadow var(--transition--hover);
+    transition: all var(--transition--hover);
 }
 
 .card:hover  {
+    transform: scale(0.95);
     box-shadow: var(--box-shadow);
-    transition: box-shadow var(--transition--hover);
+    transition: all var(--transition--hover);
 }
 
 .card a {

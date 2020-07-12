@@ -17,3 +17,5 @@
     - Hover animations for buttons, cards, etc
 
     - Wrap cards in anchors
+
+    - Add font-weight to btn--advance
