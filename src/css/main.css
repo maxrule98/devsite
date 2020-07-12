@@ -1,13 +1,13 @@
 /*  Global  */
-@import url("./partials/normalize.css");
-@import url("./partials/typography.css");
+@import url("./global/reset.css");
+@import url("./global/typography.css");
+@import url("./global/variables.css");
+
 
 /*  Layout  */
-@import url("./partials/sections.css");
-@import url("./partials/grid.css");
-@import url("./partials/flex.css");
+@import url("./layout/layout.css");
+@import url("./layout/sections.css");
 
 /*  Components  */
-@import url("./partials/nav.css");
-@import url("./partials/card.css");
-@import url("./partials/text.css");
+@import url("./components/buttons.css");
+@import url("./components/nav.css");

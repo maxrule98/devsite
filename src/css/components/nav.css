@@ -1,0 +1,14 @@
+header {
+    top: 0;
+    background: var(--lightest);
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #d4d4d4;
+    box-shadow: var(--box-shadow);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}

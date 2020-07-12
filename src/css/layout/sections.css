@@ -1,0 +1,19 @@
+.section {
+    width: 100%;
+}
+
+.section--lightest {
+    background: var(--lightest);
+}
+
+.section--light {
+    background: var(--light);
+}
+
+.section--darkest {
+    background: var(--darkest);
+}
+
+.section--dark {
+    background: var(--dark);
+}
