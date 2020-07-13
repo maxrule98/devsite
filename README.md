@@ -19,3 +19,5 @@
     - Wrap cards in anchors
 
     - Add font-weight to btn--advance
+
+    - Remove overhang / padding from btn--no-bg

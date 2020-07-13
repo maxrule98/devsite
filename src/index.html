@@ -8,23 +8,29 @@
 </head>
 <body>
     <header>
-        <!-- <div class="site-width--nav">
+        <div class="site-width--nav">
             <div class="col-row">
-                <div class="col col--3">
-                    <h4>Site Title</h4>
-                </div>
-                <div class="col col--9">
-                    <nav>
-                        <ul>
-                            <li class="nav__link"><a href="">Link 1</a></li>
-                            <li class="nav__link"><a href="">Link 2</a></li>
-                            <li class="nav__link"><a href="">Link 3</a></li>
-                            <li class="nav__link"><a href="">Link 4</a></li>
-                        </ul>
-                    </nav>
+                <div class="col col--3 col--nav">
+                    <div class="nav__toggle">
+                        <button class="nav__button">☰</button>
+                    </div>
+                    <h4 class="nav__title">Site Title</h4>
                 </div>
             </div>
-        </div> -->
+        </div>
+        <nav class="col-row nav hidden">
+            <div class="col col--3 col--light">
+                <ul>
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col--9">
+                
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -89,28 +95,25 @@
                 </div>
             </div>
         </section>
-        <section class="section--dark" id="perks">
+        <section class="section--lightest" id="perks">
             <div class="site-width">
-                <div class="col-row">
-                    <div class="col col--6">
-                        <h2>Get your business online.</h2>
-                        <p class="text--large">Showcase your opening hours, phone number, services, directions and more with your very own website!</p>
-                        <form action="">
-                            <button class="btn btn--highlight">GET STARTED</button>
-                        </form>
-                        <form action="">
-                            <button class="btn btn--nobg">LEARN MORE</button>
-                        </form>
+                <div class="col col-row">
+                    <div class="col col--12">
+                        <h3>Section Title</h3>
                     </div>
-                    <div class="col col--6">
+                </div>
+                <div class="col-row">
+                    <div class="col col--4">
                         <h2>Get your business online.</h2>
                         <p class="text--large">Showcase your opening hours, phone number, services, directions and more with your very own website!</p>
-                        <form action="">
-                            <button class="btn btn--highlight">GET STARTED</button>
-                        </form>
-                        <form action="">
-                            <button class="btn btn--nobg">LEARN MORE</button>
-                        </form>
+                    </div>
+                    <div class="col col--4">
+                        <h2>Get your business online.</h2>
+                        <p class="text--large">Showcase your opening hours, phone number, services, directions and more with your very own website!</p>
+                    </div>
+                    <div class="col col--4">
+                        <h2>Get your business online.</h2>
+                        <p class="text--large">Showcase your opening hours, phone number, services, directions and more with your very own website!</p>
                     </div>
                 </div>
             </div>
@@ -118,30 +121,68 @@
         
     </main>
     
-    <footer class="section--darkest">
-        <div class="site-width">
-            <div class="col-row">
-                <div class="col col--3">
-                    <p>Follow Us on: </p>
+    <footer>
+        <div class="section--dark">
+            <div class="site-width">
+                <div class="col-row">
+                    <div class="col col--4">
+                        <h4>Contact Title 1</h4>
+                        <ul>
+                            <li>Method 1</li>
+                            <li>Method 2</li>
+                            <li>Method 3</li>
+                        </ul>
+                    </div>
+                    <div class="col col--4">
+                        <h4>Contact Title 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus provident, esse sequi cum ullam aliquam aspernatur repellendus voluptate repellat similique, officia alias perspiciatis vitae.</p>
+                    </div>
+                    <div class="col col--4">
+                        <form action="">
+                            <h4>Contact Title 3</h4>
+                            <input type="text" name="contactName" id="">
+                            <input type="text" name="contactEmail" id="">
+                            <input type="text" name="contactMessage" id="">
+                            <button class="btn btn--highlight btn--block" type="submit">Send Details</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="col-row">
-                <div class="col col--3">
-                    <h4>Footer Section title</h4>
-                    <ul>
-                        <li><a href="">Help Centre</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
+        </div>
+        <div class="section--darkest">
+            <div class="site-width">
+                <div class="col-row">
+                    <div class="col col--3">
+                        <p>Follow Us on: </p>
+                    </div>
                 </div>
-                <div class="col col--3">
-                    <h4>Footer Section title</h4>
-                    <ul>
-                        <li><a href="">Help Centre</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
+                <div class="col-row">
+                    <div class="col col--3">
+                        <h4>Footer Section title</h4>
+                        <ul>
+                            <li><a href="">Help Centre</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col--3">
+                        
+                    </div>
+                    <div class="col col--3">
+    
+                    </div>
+                    <div class="col col--3">
+                        <h4>Footer Section title</h4>
+                        <ul>
+                            <li><a href="">Help Centre</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="./js/nav.js"></script>
+
 </body>
 </html>

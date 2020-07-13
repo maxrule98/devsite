@@ -8,3 +8,12 @@
 //     bar1.classList.toggle('open');
 //     bar2.classList.toggle('open');
 // });
+
+const navBtn = document.querySelector(".nav__button");
+const navLinks = document.querySelector(".nav");
+console.log(navBtn);
+
+navBtn.addEventListener("click", () => {
+    navLinks.classList.toggle('hidden');
+    console.log("toggled");
+});
