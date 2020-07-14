@@ -49,3 +49,7 @@
     background: var(--light);
     color: var(--highlight);
 }
+
+.btn--block {
+    width: 100%;
+}

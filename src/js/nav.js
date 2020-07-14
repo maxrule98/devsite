@@ -9,11 +9,9 @@
 //     bar2.classList.toggle('open');
 // });
 
-const navBtn = document.querySelector(".nav__button");
+const navBtn = document.querySelector(".btn--nav");
 const navLinks = document.querySelector(".nav");
-console.log(navBtn);
 
 navBtn.addEventListener("click", () => {
     navLinks.classList.toggle('hidden');
-    console.log("toggled");
 });

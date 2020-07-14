@@ -4,3 +4,10 @@ form {
     flex-direction: column;
     width: 100%;
 }
+
+input,
+textarea {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+    resize: none;
+}
