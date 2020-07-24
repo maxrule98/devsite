@@ -79,7 +79,12 @@ pre {
 */
 
 a {
+    text-decoration: none;
     background-color: transparent;
+}
+
+a:visited {
+    color: darkblue;
 }
 
 /**

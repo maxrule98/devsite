@@ -1,7 +1,7 @@
 .site-width--nav {
     margin: 0 auto;
     padding: 0 var(--site-gutter);
-    height: 62px;
+    height: var(--nav-height);
 }
 
 .site-width {
@@ -31,6 +31,13 @@
     justify-content: start;
     align-items: center;
 }
+
+.col--nav-links {
+    z-index: -1;
+    height: calc(100vh - var(--nav-height));
+    box-shadow: var(--box-shadow);
+}
+
 .col--light {
     padding: 1em;
     background: var(--light);

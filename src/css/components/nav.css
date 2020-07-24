@@ -5,23 +5,52 @@ header {
     width: 100%;
     border-bottom: 1px solid #d4d4d4;
     box-shadow: var(--box-shadow);
-    z-index: 100;
+    z-index: 10;
 }
 
+
+.nav {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transition: var(--transition--hover);
+    z-index: -10;
+}
+
+.nav.hidden {
+    transform: translateX(-110%);
+    transition: var(--transition--hover);
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5em;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav__links li {
+
+}
+
+
+/* 
 .nav {
     height: 100vh;
     width: 100%;
     position: absolute;
     top: 62px;
     left: 0;
-    z-index: -1;
+    z-index: -10;
     transform: translateX(0);
     transition: var(--transition--hover);
-    /* background: pink; */
 }
 
 .nav.hidden {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
     transition: var(--transition--hover);
 }
 
@@ -44,4 +73,4 @@ nav ul {
 
 nav ul li {
     height: 62px;
-}
+} */

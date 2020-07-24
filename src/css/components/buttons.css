@@ -22,8 +22,8 @@
 }
 .btn--no-bg:hover:after,
 .btn--no-bg:focus:after {
-    width: 100%; 
-    left: 0; 
+    width: 95%; 
+    left: 5%; 
 }
 
 .btn--highlight {
@@ -34,7 +34,7 @@
 }
 .btn--highlight:hover,
 .btn--highlight:focus {
-    transform: scale(0.95);
+    transform: scale(0.975);
     background:var(--highlight-hover);
     box-shadow: var(--box-shadow);
     transition: all var(--transition--hover);

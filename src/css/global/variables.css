@@ -10,6 +10,7 @@
     --highlight-hover: rgb(31, 145, 216);
 
     /*  Layout  */
+    --nav-height: 62px;
     --site-width: 1200px;
     --site-gutter: 1em;
     --site-section-padding: 3em;
