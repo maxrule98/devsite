@@ -385,6 +385,7 @@ template {
     --border-radius: 0.55em;
     --box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
     --transition--hover: 225ms ease;
+    --transition--nav: 375ms ease;
 }
 .site-width--nav {
     margin: 0 auto;
@@ -421,8 +422,7 @@ template {
 }
 
 .col--nav-links {
-    z-index: -1;
-    height: calc(100vh - var(--nav-height));
+    height: 100vh;
     box-shadow: var(--box-shadow);
 }
 
@@ -564,6 +564,14 @@ template {
 .btn--block {
     width: 100%;
 }
+
+.btn--nav {
+    padding: 0;
+    margin: 0;
+    margin-right: 0.5em;
+    width: 20px;
+    font-size: 1.25em;
+}
 header {
     top: 0;
     background: var(--lightest);
@@ -576,17 +584,18 @@ header {
 
 
 .nav {
+    top: 0;
     position: fixed;
     width: 100%;
     margin: 0;
     padding: 0;
-    transition: var(--transition--hover);
+    transition: var(--transition--nav);
     z-index: -10;
 }
 
 .nav.hidden {
     transform: translateX(-110%);
-    transition: var(--transition--hover);
+    transition: var(--transition--nav);
 }
 
 .nav__links {
@@ -596,6 +605,7 @@ header {
     gap: 5em;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .nav__links li {

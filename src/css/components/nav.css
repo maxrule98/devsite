@@ -10,17 +10,18 @@ header {
 
 
 .nav {
+    top: 0;
     position: fixed;
     width: 100%;
     margin: 0;
     padding: 0;
-    transition: var(--transition--hover);
+    transition: var(--transition--nav);
     z-index: -10;
 }
 
 .nav.hidden {
     transform: translateX(-110%);
-    transition: var(--transition--hover);
+    transition: var(--transition--nav);
 }
 
 .nav__links {
@@ -30,6 +31,7 @@ header {
     gap: 5em;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .nav__links li {

@@ -33,8 +33,7 @@
 }
 
 .col--nav-links {
-    z-index: -1;
-    height: calc(100vh - var(--nav-height));
+    height: 100vh;
     box-shadow: var(--box-shadow);
 }
 
