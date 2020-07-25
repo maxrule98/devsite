@@ -6,24 +6,13 @@
     width: max-content;
 }
 .btn--no-bg {
-    position: relative;
+    padding: 1em 0;
+    transition: all var(--transition--hover);
 }
-.btn--no-bg:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: var(--highlight-hover);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-.btn--no-bg:hover:after,
-.btn--no-bg:focus:after {
-    width: 95%; 
-    left: 5%; 
+.btn--no-bg:hover,
+.btn--no-bg:focus {
+    padding-left: 1em;
+    transition: all var(--transition--hover);
 }
 
 .btn--highlight {
@@ -41,13 +30,13 @@
 }
 
 .btn--advance {
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 600;
     align-self: flex-end;
     border-radius: 50%;
     padding: 1em;
-    background: var(--light);
-    color: var(--highlight);
+    background: var(--highlight);
+    color: var(--lightest);
 }
 
 .btn--block {

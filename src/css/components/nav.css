@@ -28,14 +28,29 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5em;
+    
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .nav__links li {
+    position: relative;
+    padding: 1em 0;
+    transition: var(--transition--hover);
+}
 
+.nav__links li:hover {
+    padding-left: 1em;
+    transition: var(--transition--hover);
+} 
+
+.nav__links li a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0em;
+    left: 0;
 }
 
 

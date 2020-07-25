@@ -21,7 +21,7 @@
 .col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     grid-column: span 12;
 }
 
@@ -34,7 +34,9 @@
 
 .col--nav-links {
     height: 100vh;
+    padding: calc(var(--nav-height) + var(--site-section-padding)) 1em var(--site-section-padding) 1em;
     box-shadow: var(--box-shadow);
+    background: var(--lightest);
 }
 
 .col--light {
