@@ -5,6 +5,7 @@
 
 
 /*  Layout  */
+@import url("./layout/flex.css");
 @import url("./layout/layout.css");
 @import url("./layout/sections.css");
 

@@ -17,3 +17,12 @@
     top: 0em;
     left: 0;
 }
+
+.card i {
+    font-size: 2em;
+    text-align: center;
+    color: var(--highlight);
+    background: var(--light);
+    border-radius: var(--border-radius);
+    padding: 1em;
+}

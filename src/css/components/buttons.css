@@ -6,7 +6,7 @@
     width: max-content;
 }
 .btn--no-bg {
-    padding: 1em 0;
+    
     transition: all var(--transition--hover);
 }
 .btn--no-bg:hover,
@@ -49,4 +49,5 @@
     margin-right: 0.5em;
     width: 20px;
     font-size: 1.25em;
+    outline: none;
 }

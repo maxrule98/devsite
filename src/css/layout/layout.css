@@ -21,19 +21,20 @@
 .col {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     grid-column: span 12;
 }
 
 .col--nav {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .col--nav-links {
     height: 100vh;
+    justify-content: start;
     padding: calc(var(--nav-height) + var(--site-section-padding)) 1em var(--site-section-padding) 1em;
     box-shadow: var(--box-shadow);
     background: var(--lightest);

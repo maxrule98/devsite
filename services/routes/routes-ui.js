@@ -3,8 +3,9 @@ const express = require('express');
 const routes = app => {
     app.use('/', express.static('dist'));
     app.use('/', express.static('dist/index.html'));
-    app.use('/hello', express.static('dist/hello.html'));
-    app.use('/hello', express.static('dist/pricing.html'));
+    app.use('/pricing', express.static('dist/pricing.html'));
+    app.use('/portfolio', express.static('dist/portfolio.html'));
+    app.use('/contact', express.static('dist/contact.html'));
 };
 
 module.exports = routes;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MR.Dev</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/5041f7489a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -21,10 +22,11 @@
         <nav class="col-row nav hidden">
             <div class="col col--3 col--nav-links">
                 <ul class="nav__links">
-                    <li><a href=""></a>Our services</li>
-                    <li><a href=""></a>Our prices</li>
-                    <li><a href=""></a>Previous clients</li>
-                    <li><a href=""></a>Contact us</li>
+                    <li><a href="/"></a>Home</li>
+                    <li><a href="/pricing"></a>Our services</li>
+                    <li><a href="/portfolio"></a>Previous clients</li>
+                    <li><a href="/contact"></a>Contact us</li>
+                    <li><a href="/blog"></a>Blog</li>
                 </ul>
             </div>
         </nav>
@@ -36,13 +38,10 @@
             <div class="site-width">
                 <div class="col-row">
                     <div class="col col--6 col--light">
-                        <h2>Get your business online.</h2>
+                        <h1>Get your business online.</h1>
                         <p class="text--large">Showcase your opening hours, phone number, services, directions and more with your very own website!</p>
-                        <form action="">
+                        <form action="/contact">
                             <button class="btn btn--highlight">GET STARTED</button>
-                        </form>
-                        <form action="">
-                            <button class="btn btn--no-bg">LEARN MORE →</button>
                         </form>
                     </div>
                     <div class="col col--6">
@@ -54,40 +53,64 @@
         </section>
         <section class="section--light" id="perks">
             <div class="site-width">
+                <div class="col col--12">
+                    <h2>Our Services</h2>
+                </div>
                 <div class="col-row">
-                    <div class="col col--12">
-                        <h3>Key features</h3>
-                    </div>
                     <div class="col col--3 col--lightest card">
                         <a href=""></a>
-                        <h4>Card Title</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur libero doloremque provident natus ducimus.</p>
+                        <div class="flex flex--row">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Custom, responsive website</h3>
+                        <p>Responsive websites are essential for reaching your customers. Mobile web usage account for aproximately 58% of all web traffic. This means that if your website doesn't scale to look great on tablets and tablets, you could be loosing out on half of your potential customers.</p>
                         <form action="">
-                            <button class="btn btn--advance">→</button>
+                            <div class="flex flex--row justify--right">
+                                <p class="bold">Learn more</p>
+                                <button class="btn btn--advance">→</button>
+                            </div>
                         </form>
                     </div>
                     <div class="col col--3 col--lightest card">
                         <a href=""></a>
-                        <h4>Card Title</h4>
+                        <div class="flex flex--row justify--center">
+
+                        </div>
+                        <h3>Search e    ngine optimisation</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur libero doloremque provident natus ducimus.</p>
                         <form action="">
-                            <button class="btn btn--advance">→</button>
+                            <div class="flex flex--row justify--right">
+                                <p class="bold">Learn more</p>
+                                <button class="btn btn--advance">→</button>
+                            </div>
                         </form>
                     </div>
                     <div class="col col--3 col--lightest card">
                         <a href=""></a>
-                        <h4>Card Title</h4>
+                        <div class="flex flex--row justify--center">
+
+                        </div>
+                        <h3>Card Title</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur libero doloremque provident natus ducimus.</p>
                         <form action="">
-                            <button class="btn btn--advance">→</button>
+                            <div class="flex flex--row justify--right">
+                                <p class="bold">Learn more</p>
+                                <button class="btn btn--advance">→</button>
+                            </div>
                         </form>
                     </div>
                     <div class="col col--3 col--lightest card">
                         <a href=""></a>
-                        <h4>Card Title</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur libero doloremque provident natus ducimus.</p>
+                        <div class="flex flex--row">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>Website maintainence</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis, sapiente perferendis id facilis odit, sint tenetur vel aliquid magnam fugit eaque neque dolore minus temporibus nihil placeat alias autem, vero voluptatem! Aliquid nulla tempore maxime nihil, repellendus.</p>
                         <form action="">
-                            <button class="btn btn--advance">→</button>
+                            <div class="flex flex--row justify--right">
+                                <p class="bold">Learn More</p>
+                                <button class="btn btn--advance">→</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -124,7 +147,7 @@
             <div class="site-width">
                 <div class="col-row">
                     <div class="col col--6">
-                        <h4>Contact Title 1</h4>
+                        <h4>You can reach us via:</h4>
                         <ul>
                             <li>Method 1</li>
                             <li>Method 2</li>
@@ -133,14 +156,12 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quam, facilis maxime harum cumque impedit commodi pariatur, hic nihil unde incidunt iste eveniet nesciunt minima voluptatibus natus maiores voluptates aliquam architecto saepe ut nostrum, nemo ex. Asperiores, repellat? Suscipit, qui.</p>
                     </div>
                     <div class="col col--6">
-                        <h4>Alternatively, we'll contact you:</h4>
+                        <h4>Alternatively, we can contact you:</h4>
                         <form action="">
                             <label for="contactName">Your Name</label>
                             <input type="text" name="contactName" id="">
                             <label for="contactEmail">Your Email</label>
                             <input type="text" name="contactEmail" id="">
-                            <label for="contactMessage">Your Message</label>
-                            <textarea name="contactMessage" id="" rows="5"></textarea>
                             <button class="btn btn--highlight btn--block" type="submit">Send Details</button>
                         </form>
                     </div>
@@ -181,6 +202,5 @@
     </footer>
 
     <script src="./js/nav.js"></script>
-
 </body>
 </html>
