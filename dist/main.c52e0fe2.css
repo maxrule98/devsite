@@ -409,6 +409,37 @@ h6 {
     --transition--hover: 225ms ease;
     --transition--nav: 375ms ease;
 }
+.fade-in {
+    opacity: 0;
+    transition: opacity 375Ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transition: opacity 375Ms ease-in;
+}
+
+.from--left {
+    transform: translateX(-50%);
+}
+
+.from--right {
+    transform: translateX(50%);
+}
+
+.from--left,
+.from--right {
+    opacity: 0;
+    transition: transform 375ms ease-in;
+}
+
+.from--left.appear,
+.from--right.appear {
+    opacity: 1;
+    transition-property: opacity transform;
+    transition: 375ms ease-in;
+    transform: translateX(0);
+}
 .flex {
     display: flex;
     gap: 1em;
