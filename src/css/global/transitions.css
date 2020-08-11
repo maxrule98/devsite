@@ -9,15 +9,15 @@
 }
 
 .from--left {
-    transform: translateX(-50%);
+    transform: translateX(-15%);
 }
 
 .from--right {
-    transform: translateX(50%);
+    transform: translateX(15%);
 }
 
 .from--bottom {
-    transform: translateY(50%);
+    transform: translateY(15%);
 }
 
 .from--left,

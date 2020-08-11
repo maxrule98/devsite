@@ -421,15 +421,15 @@ h6 {
 }
 
 .from--left {
-    transform: translateX(-50%);
+    transform: translateX(-15%);
 }
 
 .from--right {
-    transform: translateX(50%);
+    transform: translateX(15%);
 }
 
 .from--bottom {
-    transform: translateY(50%);
+    transform: translateY(15%);
 }
 
 .from--left,
@@ -488,6 +488,7 @@ h6 {
     flex-direction: column;
     justify-content: center;
     grid-column: span 12;
+    border-radius: var(--border-radius);
 }
 
 .col--nav {

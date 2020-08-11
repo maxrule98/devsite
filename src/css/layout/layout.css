@@ -23,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     grid-column: span 12;
+    border-radius: var(--border-radius);
 }
 
 .col--nav {
