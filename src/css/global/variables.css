@@ -4,14 +4,14 @@
     --light: whitesmoke;
     --highlight: rgb(10, 122, 191);
     --dark: rgb(161, 172, 182);
-    --darkest: slategray;
+    --darkest: #212D40;
 
     /*  Highlight Colours  */
     --highlight-hover: rgb(31, 145, 216);
 
     /*  Layout  */
     --nav-height: 62px;
-    --site-width: 1200px;
+    --site-width: 1500px;
     --site-gutter: 1em;
     --site-section-padding: 3em;
 

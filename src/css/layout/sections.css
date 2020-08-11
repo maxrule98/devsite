@@ -1,5 +1,8 @@
 .section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section--lightest {
@@ -11,6 +14,7 @@
 }
 
 .section--darkest {
+    color: white;
     background: var(--darkest);
 }
 

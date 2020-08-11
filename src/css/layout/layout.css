@@ -21,7 +21,7 @@
 .col {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     grid-column: span 12;
 }
 
@@ -53,6 +53,10 @@
 .col--darkest {
     padding: 0 1em;
     background: var(--darkest);
+}
+
+.transparent {
+    
 }
 
 @media (min-width: 800px) {

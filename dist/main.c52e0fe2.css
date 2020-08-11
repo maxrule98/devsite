@@ -26,6 +26,7 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /**
@@ -81,10 +82,6 @@ pre {
 a {
     text-decoration: none;
     background-color: transparent;
-}
-
-a:visited {
-    color: darkblue;
 }
 
 /**
@@ -370,8 +367,12 @@ p {
     color: #2d2d2d;
 }
 
-i {
-    
+a {
+    color: thistle;
+}
+
+a:visited {
+    color: rgb(174, 119, 174);
 }
 
 h1,
@@ -392,14 +393,14 @@ h6 {
     --light: whitesmoke;
     --highlight: rgb(10, 122, 191);
     --dark: rgb(161, 172, 182);
-    --darkest: slategray;
+    --darkest: #212D40;
 
     /*  Highlight Colours  */
     --highlight-hover: rgb(31, 145, 216);
 
     /*  Layout  */
     --nav-height: 62px;
-    --site-width: 1200px;
+    --site-width: 1500px;
     --site-gutter: 1em;
     --site-section-padding: 3em;
 
@@ -427,14 +428,20 @@ h6 {
     transform: translateX(50%);
 }
 
+.from--bottom {
+    transform: translateY(50%);
+}
+
 .from--left,
-.from--right {
+.from--right,
+.from--bottom {
     opacity: 0;
     transition: transform 375ms ease-in;
 }
 
 .from--left.appear,
-.from--right.appear {
+.from--right.appear,
+.from--bottom.appear {
     opacity: 1;
     transition-property: opacity transform;
     transition: 375ms ease-in;
@@ -479,7 +486,7 @@ h6 {
 .col {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     grid-column: span 12;
 }
 
@@ -511,6 +518,10 @@ h6 {
 .col--darkest {
     padding: 0 1em;
     background: var(--darkest);
+}
+
+.transparent {
+    
 }
 
 @media (min-width: 800px) {
@@ -564,6 +575,9 @@ h6 {
 }
 .section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section--lightest {
@@ -575,6 +589,7 @@ h6 {
 }
 
 .section--darkest {
+    color: white;
     background: var(--darkest);
 }
 
@@ -775,6 +790,16 @@ textarea {
 .card div:nth-of-type(2) {
     margin: auto 0 0 0;
 
+}
+.hero {
+    background-image: linear-gradient(0deg, var(--darkest), transparent), url("https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 60%;
+    background-attachment: fixed;
+    min-height: 32em;
+    background-color: black;
 }
 /*  Global  */
 
