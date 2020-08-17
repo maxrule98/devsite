@@ -7,8 +7,14 @@ form {
 
 input,
 textarea {
-    margin: 0.5em 0;
-    padding: 0.5em 1em;
+    margin: 1em 0;
+    padding: 1em 1em;
     resize: none;
-    border: none;
+    border: 1px solid var(--dark);
+    border-radius: var(--border-radius);
+    outline: none;
+}
+
+small {
+    margin: 1em 0;
 }

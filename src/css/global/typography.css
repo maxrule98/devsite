@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
 
 * {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p {
@@ -10,11 +10,11 @@ p {
 }
 
 a {
-    color: thistle;
+    color: var(--highlight);
 }
 
 a:visited {
-    color: rgb(174, 119, 174);
+    color: var(--highlight-visited);
 }
 
 h1,

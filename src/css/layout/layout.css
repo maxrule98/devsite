@@ -14,7 +14,6 @@
 .col-row {
     display: grid;
     gap: 1em;
-    align-content: start;
     grid-template-columns: repeat(12, minmax(5px, 1fr));
 }
 

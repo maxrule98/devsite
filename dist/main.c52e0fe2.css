@@ -13,6 +13,7 @@
 }
 
 html {
+    overflow-x: hidden;
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -359,7 +360,7 @@ template {
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
 
 * {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p {
@@ -368,11 +369,11 @@ p {
 }
 
 a {
-    color: thistle;
+    color: var(--highlight);
 }
 
 a:visited {
-    color: rgb(174, 119, 174);
+    color: var(--highlight-visited);
 }
 
 h1,
@@ -397,6 +398,7 @@ h6 {
 
     /*  Highlight Colours  */
     --highlight-hover: rgb(31, 145, 216);
+    --highlight-visited: rgb(30, 105, 152);
 
     /*  Layout  */
     --nav-height: 62px;
@@ -456,12 +458,32 @@ h6 {
     flex-direction: row;
 }
 
+.justify--left {
+    justify-content: flex-start;
+}
+
 .justify--right {
     justify-content: flex-end;
 }
 
 .justify--center {
-    justify-content: center;
+    justify-content: flex-sta;
+}
+
+.align--start {
+
+}
+
+.align--center {
+
+}
+
+.align--start {
+    align-items: start;
+}
+
+.align--stretch {
+    align-items: stretch;
 }
 .site-width--nav {
     margin: 0 auto;
@@ -479,7 +501,6 @@ h6 {
 .col-row {
     display: grid;
     gap: 1em;
-    align-content: start;
     grid-template-columns: repeat(12, minmax(5px, 1fr));
 }
 
@@ -754,10 +775,16 @@ form {
 
 input,
 textarea {
-    margin: 0.5em 0;
-    padding: 0.5em 1em;
+    margin: 1em 0;
+    padding: 1em 1em;
     resize: none;
-    border: none;
+    border: 1px solid var(--dark);
+    border-radius: var(--border-radius);
+    outline: none;
+}
+
+small {
+    margin: 1em 0;
 }
 .card {
     position: relative;
@@ -793,14 +820,20 @@ textarea {
 
 }
 .hero {
-    background-image: linear-gradient(0deg, var(--darkest), transparent), url("https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
     background-position-x: 60%;
     background-attachment: fixed;
-    min-height: 32em;
+    min-height: calc(100vh - var(--nav-height));
     background-color: black;
+}
+
+@media (min-width: 800px) {
+    .hero {
+        min-height: 32em;
+    }
 }
 /*  Global  */
 

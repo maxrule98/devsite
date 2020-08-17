@@ -7,10 +7,22 @@
     flex-direction: row;
 }
 
+.justify--left {
+    justify-content: flex-start;
+}
+
 .justify--right {
     justify-content: flex-end;
 }
 
 .justify--center {
-    justify-content: center;
+    justify-content: flex-sta;
+}
+
+.align--start {
+
+}
+
+.align--center {
+
 }

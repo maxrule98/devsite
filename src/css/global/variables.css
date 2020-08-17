@@ -8,6 +8,7 @@
 
     /*  Highlight Colours  */
     --highlight-hover: rgb(31, 145, 216);
+    --highlight-visited: rgb(30, 105, 152);
 
     /*  Layout  */
     --nav-height: 62px;
