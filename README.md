@@ -21,3 +21,5 @@
     - Add font-weight to btn--advance
 
     - Remove overhang / padding from btn--no-bg
+
+    - Solve jumping when using vh for the hero height
