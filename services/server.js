@@ -1,10 +1,11 @@
 require('dotenv').config();
+const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 /*----------*/
 const uiRoutes = require('./routes/routes-ui');
-// const apiRoutes = require('./routes/routes-api');
+const apiRoutes = require('./routes/routes-api');
 
 
 (async () => {
@@ -12,8 +13,11 @@ const uiRoutes = require('./routes/routes-ui');
         await require('./build');
     }
     
+    app.use(bodyParser.json({ limit: '1mb' }));
+    app.use(bodyParser.urlencoded({ extended: true }));
+
     uiRoutes(app);
-    // apiRoutes(app);
+    apiRoutes(app);
 
 
     app.locals.PORT = PORT
