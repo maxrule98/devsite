@@ -12,8 +12,6 @@
 const navBtn = document.querySelector(".btn--nav");
 const navLinks = document.querySelector(".nav");
 
-console.log(navLinks.classList);
-
 navBtn.addEventListener("click", () => {
     navLinks.classList.toggle('hidden');
     if (navLinks.classList.length === 3) {
