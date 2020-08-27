@@ -118,25 +118,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/contact.js":[function(require,module,exports) {
-var contactForm = document.querySelector('.contact-form');
-var API_URL = "/api/v1/contact";
-contactForm.addEventListener('submit', function (event) {
-  event.preventDefault();
-  var formData = new FormData(contactForm);
-  var contactName = formData.get('contactName');
-  var contactEmail = formData.get('contactEmail');
-  var contactSchema = {
-    contactName: contactName,
-    contactEmail: contactEmail
-  };
-  fetch(API_URL, {
-    method: 'POST',
-    body: JSON.stringify(contactSchema),
-    headers: {
-      'content-type': 'application/json'
-    }
-  });
-});
+// const contactForm = document.querySelector('.contact-form');
+// const API_URL = `/api/v1/contact`;
+// contactForm.addEventListener('submit', (event) => {
+//     event.preventDefault();
+//     const formData = new FormData(contactForm);
+//     const contactName = formData.get('contactName');
+//     const contactEmail = formData.get('contactEmail');
+//     const contactSchema = {
+//         contactName,
+//         contactEmail
+//     }
+//     fetch(API_URL, {
+//         method: 'POST',
+//         body: JSON.stringify(contactSchema),
+//         headers: {
+//             'content-type': 'application/json'
+//         }
+//     });
+// });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -165,7 +165,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49984" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55700" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

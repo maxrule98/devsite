@@ -1,0 +1,7 @@
+.cookies {
+    display: none;
+}
+
+.cookies.appear {
+    display: unset;
+}

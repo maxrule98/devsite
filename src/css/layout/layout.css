@@ -4,6 +4,16 @@
     height: var(--nav-height);
 }
 
+.site-width--cookies {
+    margin: 0 auto;
+    padding: 0 var(--site-gutter);
+}
+
+.cookies {
+    position: fixed;
+    bottom: 0;
+}
+
 .site-width {
     max-width: var(--site-width);
     margin: 0 auto;

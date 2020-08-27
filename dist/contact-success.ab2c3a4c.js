@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 // import 'regenerator-runtime/runtime'
 // const contactNameResponse = document.querySelector('.contactNameResponse');
 // async function getNameResponse() {
-//     let response = await fetch(`https://jsonplaceholder.typicode.com/todos`);
+//     let response = await fetch(`/api/v1/contact-submit`);
 //     const data = await response.json();
 //     console.log(data[0]);
 //     contactNameResponse.append(data[0].title);
@@ -155,7 +155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49984" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55700" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,26 +1,11 @@
 const express = require('express');
 const { Router } = require('express');
-// const db = require('./db');
+const mailchimp = require('../controllers/mailchimp');
 
 const routes = app => {
     const api = Router();
 
-    api.get('/', (req, res) => {
-        res.json({
-            message: 'HELLO WORLD'
-        });
-    });
-
-    api.post('/contact', (req, res) => {
-        const { contactName, contactEmail } = req.body;
-
-        if(contactName && contactEmail) {
-            res.redirect('/contact-success')
-        } else {
-            res.redirect('/contact-fail');
-            console.log('fail');
-        }
-    })
+    api.post('/contact-submit', mailchimp.signup);
 
     app.use('/api/v1/', api);
 };
