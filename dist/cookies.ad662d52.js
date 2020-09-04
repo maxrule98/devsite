@@ -120,10 +120,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"js/cookies.js":[function(require,module,exports) {
 var cookieContainer = document.querySelector('.cookies');
 var cookieAccept = document.querySelector('#cookieAccept');
-var cookieReject = document.querySelector('#cookieReject');
-cookieContainer.addEventListener("click", function () {
-  event.preventDefault();
-});
+var cookieReject = document.querySelector('#cookieReject'); // cookieContainer.addEventListener("click", () => {
+//     event.preventDefault();
+// });
+
 cookieAccept.addEventListener("click", function () {
   console.log('Cookies Accepted');
   cookieContainer.classList.remove("appear");
@@ -166,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55700" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49744" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

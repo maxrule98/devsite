@@ -510,6 +510,7 @@ li {
 }
 
 .site-width--cookies {
+    max-width: var(--site-width);
     margin: 0 auto;
     padding: 0 var(--site-gutter);
 }
