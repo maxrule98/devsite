@@ -21,3 +21,13 @@
 .section--dark {
     background: var(--dark);
 }
+
+.section--lightest.dark-mode {
+    color: white;
+    background: var(--darkest);
+}
+
+.section--light.dark-mode {
+    color: white;
+    background: var(--dark);
+}

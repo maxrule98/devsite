@@ -117,26 +117,78 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/nav.js":[function(require,module,exports) {
-// const menu = document.querySelector(".nav__toggle");
-// const links = document.querySelector(".nav__links");
-// const bar1 = document.querySelector(".bar-1");
-// const bar2 = document.querySelector(".bar-2");
-// menu.addEventListener('click', () => {
-//     links.classList.toggle('hidden');
-//     bar1.classList.toggle('open');
-//     bar2.classList.toggle('open');
-// });
-var navBtn = document.querySelector(".btn--nav");
-var navLinks = document.querySelector(".nav");
-navBtn.addEventListener("click", function () {
-  navLinks.classList.toggle('hidden');
+})({"js/dark-mode.js":[function(require,module,exports) {
+var darkToggle = document.querySelector("#dark-mode");
+var header = document.querySelector("header");
+var navLinks = document.querySelector(".col--nav__links");
+var sectionLightest = document.querySelectorAll(".section--lightest");
+var sectionLight = document.querySelectorAll(".section--light");
+var colLightest = document.querySelectorAll(".col--lightest");
+var colLight = document.querySelectorAll(".col--light");
+console.log(header);
 
-  if (navLinks.classList.length === 3) {
-    navBtn.innerText = '☰';
-  } else {
-    navBtn.innerText = '✕';
-  }
+function toggleDarkness() {
+  header.classList.toggle("dark-mode");
+  navLinks.classList.toggle("dark-mode");
+  sectionLightest.forEach(function (el) {
+    if (el.id !== "hero") {
+      console.log(el);
+      el.classList.toggle("dark-mode");
+    } else {
+      return;
+    }
+  });
+  sectionLight.forEach(function (el) {
+    el.classList.toggle("dark-mode");
+  });
+  colLight.forEach(function (el) {
+    el.classList.toggle("dark-mode");
+  });
+  colLightest.forEach(function (el) {
+    el.classList.toggle("dark-mode");
+  }); // sectionLight.classList.toggle(".dark-mode");
+  // colLight.classList.toggle(".dark-mode");
+  // colLightest.classList.toggle(".dark-mode");
+  // if (darkToggle.checked) {
+  //     console.log("On");
+  //     sectionLightest.forEach(function (value) {
+  //         value.removeAttribute("class", "section--lightest");
+  //         value.setAttribute("class", "section--darkest");
+  //     });
+  //     sectionLight.forEach(function (value) {
+  //         value.removeAttribute("class", "section--light");
+  //         value.setAttribute("class", "section--dark");
+  //     });
+  //     colLightest.forEach(function (value) {
+  //         value.removeAttribute("class", "col--lightest");
+  //         value.setAttribute("class", "col--darkest");
+  //     });
+  //     colLight.forEach(function (value) {
+  //         value.removeAttribute("class", "col--light");
+  //         value.setAttribute("class", "col--dark");
+  //     });
+  // } else {
+  //     sectionLightest.forEach(function (value) {
+  //         value.removeAttribute("class", "section--darkest");
+  //         value.setAttribute("class", "section--lightest");
+  //     });
+  //     sectionLight.forEach(function (value) {
+  //         value.removeAttribute("class", "section--dark");
+  //         value.setAttribute("class", "section--light");
+  //     });
+  //     colLightest.forEach(function (value) {
+  //         value.removeAttribute("class", "col--lightest");
+  //         value.setAttribute("class", "col--darkest");
+  //     });
+  //     colLight.forEach(function (value) {
+  //         value.removeAttribute("class", "col--light");
+  //         value.setAttribute("class", "col--dark");
+  //     });
+  // }
+}
+
+darkToggle.addEventListener('click', function (e) {
+  toggleDarkness();
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -342,5 +394,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/nav.js"], null)
-//# sourceMappingURL=/nav.8bf579d3.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/dark-mode.js"], null)
+//# sourceMappingURL=/dark-mode.ea51613a.js.map

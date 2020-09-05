@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="site-width--nav">
+        <div class="site-width">
             <div class="col-row">
                 <div class="col col--3 col--nav">
                     <div class="nav__toggle">
@@ -20,13 +20,20 @@
             </div>
         </div>
         <nav class="col-row nav hidden">
-            <div class="col col--3 col--nav-links">
+            <div class="col col--3 col--nav__links">
                 <ul class="nav__links">
                     <li><a href="/"></a>Home</li>
                     <li><a href="/pricing"></a>Our services</li>
                     <li><a href="/portfolio"></a>Previous clients</li>
                     <li><a href="/contact"></a>Contact us</li>
                     <li><a href="/blog"></a>Blog</li>
+                    <br>
+                    <br>
+                    <label class="dark__switch">
+                        <input type="checkbox" id="dark-mode">
+                        <span class="dark__slider round"></span>
+                    </label>
+                    <p>Dark mode (Experimental)</p>
                 </ul>
             </div>
         </nav>
@@ -39,7 +46,7 @@
                 <div class="col-row">
                     <div class="col col--6 col--light transparent fade-in slide-in from--left">
                         <h1>Showcase your business online.</h1>
-                        <h3>With JUSTALIGN</h3>
+                        <h3>With {Company Name}</h3>
                         <p class="text--large">Display your businesses opening hours, phone number, services, directions and more with your very own website!</p>
                         <form action="/contact">
                             <button class="btn btn--highlight">GET STARTED</button>
@@ -110,7 +117,7 @@
         </section>
         <section class="section--lightest" id="perks">
             <div class="site-width">
-                <div class="col col-row">
+                <div class="col-row">
                     <div class="col col--12">
                         <h2>Features & perks</h2>
                     </div>
@@ -145,7 +152,7 @@
         </section>
         <section class="section--light">
             <div class="site-width">
-                <div class="col col-row">
+                <div class="col-row">
                     <div class="col col--12">
                         <h2>Contact Us</h2>
                     </div>
@@ -210,7 +217,7 @@
 
     <section class="overlays">
         <section class="section section--dark cookies">
-            <div class="site-width--cookies">
+            <div class="site-width">
                 <div class="col-row">
                     <div class="col col--12">
                         <h4>This website uses cookies</h4>
@@ -244,5 +251,6 @@
     <script src="./js/nav.js"></script>
     <script src="./js/transition.js"></script>
     <script src="./js/cookies.js"></script>
+    <script src="./js/dark-mode.js"></script>
 </body>
 </html>

@@ -1,3 +1,65 @@
+/* The switch - the box around the slider */
+.dark__switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .dark__switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .dark__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .dark__slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .dark__slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .dark__slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .dark__slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .dark__slider.round {
+    border-radius: 34px;
+  }
+  
+  .dark__slider.round:before {
+    border-radius: 50%;
+  }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -35,7 +97,7 @@ body {
 */
 
 main {
-    margin-top: 62px;
+    margin-top: calc(var(--nav-height) - 1px);
     display: block;
 }
 
@@ -365,7 +427,6 @@ template {
 
 p {
     font-weight: 100;
-    color: #2d2d2d;
 }
 
 a {
@@ -411,7 +472,7 @@ li {
     --lightest: rgb(255, 255, 255);
     --light: whitesmoke;
     --highlight: rgb(10, 122, 191);
-    --dark: rgb(161, 172, 182);
+    --dark: #333a46;
     --darkest: #212D40;
 
     /*  Highlight Colours  */
@@ -503,12 +564,6 @@ li {
 .align--stretch {
     align-items: stretch;
 }
-.site-width--nav {
-    margin: 0 auto;
-    padding: 0 var(--site-gutter);
-    height: var(--nav-height);
-}
-
 .site-width--cookies {
     max-width: var(--site-width);
     margin: 0 auto;
@@ -523,7 +578,7 @@ li {
 .site-width {
     max-width: var(--site-width);
     margin: 0 auto;
-    padding: var(--site-section-padding) var(--site-gutter);
+    padding: 0 var(--site-gutter);
 }
 
 
@@ -548,11 +603,21 @@ li {
     align-items: center;
 }
 
-.col--nav-links {
+.col--nav__links {
     height: 100vh;
     justify-content: start;
     padding: calc(var(--nav-height) + var(--site-section-padding)) 1em var(--site-section-padding) 1em;
     box-shadow: var(--box-shadow);
+    background: var(--lightest);
+}
+
+.col--nav__links.dark-mode {
+    color: white;
+    background: var(--darkest);
+}
+
+.col--lightest {
+    padding: 1em;
     background: var(--lightest);
 }
 
@@ -561,14 +626,14 @@ li {
     background: var(--light);
 }
 
-.col--lightest {
-    padding: 1em;
-    background: var(--lightest);
+.col--lightest.dark-mode {
+    color: white;
+    background: var(--darkest);
 }
 
-.col--darkest {
-    padding: 0 1em;
-    background: var(--darkest);
+.col--light.dark-mode {
+    color: white;
+    background: var(--dark);
 }
 
 .transparent {
@@ -648,6 +713,15 @@ li {
     background: var(--dark);
 }
 
+.section--lightest.dark-mode {
+    color: white;
+    background: var(--darkest);
+}
+
+.section--light.dark-mode {
+    color: white;
+    background: var(--dark);
+}
 .btn {
     border-radius: var(--border-radius);
     background: none;
@@ -706,9 +780,13 @@ header {
     background: var(--lightest);
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid #d4d4d4;
     box-shadow: var(--box-shadow);
     z-index: 10;
+}
+
+header.dark-mode {
+    color: white;
+    background: var(--darkest);
 }
 
 .bar1, .bar2, .bar3 {

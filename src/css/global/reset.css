@@ -35,7 +35,7 @@ body {
 */
 
 main {
-    margin-top: 62px;
+    margin-top: calc(var(--nav-height) - 1px);
     display: block;
 }
 

@@ -3,9 +3,13 @@ header {
     background: var(--lightest);
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid #d4d4d4;
     box-shadow: var(--box-shadow);
     z-index: 10;
+}
+
+header.dark-mode {
+    color: white;
+    background: var(--darkest);
 }
 
 .bar1, .bar2, .bar3 {

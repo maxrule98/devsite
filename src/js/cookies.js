@@ -7,18 +7,20 @@ const cookieReject = document.querySelector('#cookieReject');
 // });
 
 cookieAccept.addEventListener("click", () => {
+    event.preventDefault();
     console.log('Cookies Accepted');
     cookieContainer.classList.remove("appear");
-    localStorage.setItem("cookieBannerDisplayed", "true");
+    localStorage.setItem("cookiesAccepted", "true");
 });
 
 cookieReject.addEventListener("click", () => {
+    event.preventDefault();
     console.log('Cookies Rejected')
     cookieContainer.classList.remove("appear");
 });
 
 setTimeout(() => {
-    if(!localStorage.getItem("cookieBannerDisplayed")) {
+    if(!localStorage.getItem("cookiesAccepted")) {
         cookieContainer.classList.add("appear")
     }
 }, 2000);

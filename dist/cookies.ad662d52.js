@@ -125,16 +125,18 @@ var cookieReject = document.querySelector('#cookieReject'); // cookieContainer.a
 // });
 
 cookieAccept.addEventListener("click", function () {
+  event.preventDefault();
   console.log('Cookies Accepted');
   cookieContainer.classList.remove("appear");
-  localStorage.setItem("cookieBannerDisplayed", "true");
+  localStorage.setItem("cookiesAccepted", "true");
 });
 cookieReject.addEventListener("click", function () {
+  event.preventDefault();
   console.log('Cookies Rejected');
   cookieContainer.classList.remove("appear");
 });
 setTimeout(function () {
-  if (!localStorage.getItem("cookieBannerDisplayed")) {
+  if (!localStorage.getItem("cookiesAccepted")) {
     cookieContainer.classList.add("appear");
   }
 }, 2000);
@@ -166,7 +168,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49744" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50022" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

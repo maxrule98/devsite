@@ -1,4 +1,5 @@
 /*  Global  */
+@import url("./global/dark-mode.css");
 @import url("./global/reset.css");
 @import url("./global/typography.css");
 @import url("./global/variables.css");
