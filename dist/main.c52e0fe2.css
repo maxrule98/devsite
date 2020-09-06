@@ -419,10 +419,8 @@ template {
     display: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 * {
-    font-family: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -437,23 +435,13 @@ a:visited {
     color: var(--highlight-visited);
 }
 
-h1 {
-    font-weight: 900;
-}
-h2 {
-    font-weight: 800;
-}
-h3 {
-    font-weight: 700;
-}
-h4 {
-    font-weight: 600;
-}
-h5 {
-    font-weight: 500;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-    font-weight: 400;
+    font-family: 'Kufam', cursive;
 }
 
 p,
@@ -483,7 +471,7 @@ li {
     --nav-height: 62px;
     --site-width: 1500px;
     --site-gutter: 1em;
-    --site-section-padding: 3em;
+    --site-section-padding: 5em;
 
     /*  Misc Styling  */
     --border-radius: 0.55em;
@@ -581,6 +569,11 @@ li {
     padding: 0 var(--site-gutter);
 }
 
+.site-width--nav {
+    max-width: var(--site-width);
+    margin: 0 auto;
+    padding: 0 var(--site-gutter);
+}
 
 .col-row {
     display: grid;
@@ -591,7 +584,7 @@ li {
 .col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     grid-column: span 12;
     border-radius: var(--border-radius);
 }
@@ -690,7 +683,7 @@ li {
     }
 }
 .section {
-    width: 100%;
+    padding: var(--site-section-padding) 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -710,6 +703,7 @@ li {
 }
 
 .section--dark {
+    color: white;
     background: var(--dark);
 }
 
@@ -754,13 +748,16 @@ li {
 }
 
 .btn--advance {
-    font-size: 1em;
-    font-weight: 600;
-    align-self: flex-end;
-    border-radius: 50%;
     padding: 1em;
-    background: var(--highlight);
-    color: var(--lightest);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.btn--advance svg {
+    width: 2em;
+    height: auto;
+    fill: var(--highlight);
+
 }
 
 .btn--block {
@@ -921,19 +918,20 @@ small {
     left: 0;
 }
 
-.card i {
-    font-size: 2em;
-    text-align: center;
-    color: var(--highlight);
-    background: var(--light);
-    border-radius: var(--border-radius);
-    padding: 1em;
+.card__icon {
+    position: relative;
+    width: 3em;
+    height: auto;
+    fill: var(--highlight);
 }
 
-.card div:nth-of-type(2) {
+.card p {
+    margin-bottom: 3em;
+}
+
+/* .card div:nth-of-type(2) {
     margin: auto 0 0 0;
-
-}
+} */
 .cookies {
     display: none;
 }

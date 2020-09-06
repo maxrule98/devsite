@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 * {
-    font-family: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -16,23 +14,13 @@ a:visited {
     color: var(--highlight-visited);
 }
 
-h1 {
-    font-weight: 900;
-}
-h2 {
-    font-weight: 800;
-}
-h3 {
-    font-weight: 700;
-}
-h4 {
-    font-weight: 600;
-}
-h5 {
-    font-weight: 500;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-    font-weight: 400;
+    font-family: 'Kufam', cursive;
 }
 
 p,
