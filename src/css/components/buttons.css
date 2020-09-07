@@ -36,7 +36,7 @@
     right: 0;
 }
 .btn--advance svg {
-    width: 2em;
+    max-width: 2em;
     height: auto;
     fill: var(--highlight);
 

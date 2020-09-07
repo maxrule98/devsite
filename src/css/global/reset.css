@@ -153,7 +153,8 @@ sup {
 * Remove the border on images inside links in IE 10.
 */
 
-img {
+img,
+svg {
     width: 100%;
     border-style: none;
 }

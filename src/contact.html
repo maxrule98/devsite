@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&family=Roboto&display=swap" rel="stylesheet">   
 </head>
 <body>
     <header>
@@ -12,34 +13,51 @@
             <div class="col-row">
                 <div class="col col--3 col--nav">
                     <div class="nav__toggle">
-                        <button class="btn btn--nav">☰</button>
+                        <button class="btn btn--nav"><svg class="btn--nav__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
                     </div>
-                    <h4 class="nav__title">Site Title</h4>
+                    <h4 class="nav__title">MR.Dev</h4>
                 </div>
             </div>
         </div>
         <nav class="col-row nav hidden">
-            <div class="col col--3 col--nav-links">
+            <div class="col col--3 col--nav__links">
                 <ul class="nav__links">
                     <li><a href="/"></a>Home</li>
                     <li><a href="/pricing"></a>Our services</li>
                     <li><a href="/portfolio"></a>Previous clients</li>
                     <li><a href="/contact"></a>Contact us</li>
                     <li><a href="/blog"></a>Blog</li>
+                    <br>
+                    <br>
+                    <label class="dark__switch">
+                        <input type="checkbox" id="dark-mode">
+                        <span class="dark__slider round"></span>
+                    </label>
+                    <p>Dark mode (Experimental)</p>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="section--light">
+        <section class="section section--lightest">
             <div class="site-width">
-                <div class="col col-row">
-                    <div class="col col--12">
+                <div class="col-row">
+                    <div class="col col--12 text--center  fade-in slide-in from--bottom">
+                        <h1>It all starts with Hello</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam quos consequuntur aspernatur. Ut, reprehenderit! Numquam corrupti voluptates neque aperiam, suscipit nihil, non deleniti hic expedita perferendis recusandae similique autem ab animi facilis? Cupiditate repellendus quas obcaecati vitae unde! Esse quisquam sapiente assumenda quo, eaque nam quam vel aspernatur neque.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--light">
+            <div class="site-width">
+                <div class="col-row">
+                    <div class="col col--12 fade-in">
                         <h2>Contact Us</h2>
                     </div>
                 </div>
                 <div class="col-row align--start">
-                    <div class="col col--6 fade-in">
+                    <div class="col col--6 fade-in slide-in from--left">
                         <h4>You can reach us via:</h4>
                         <ul>
                             <li>Method 1</li>
@@ -48,7 +66,7 @@
                         </ul>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quam, facilis maxime harum cumque impedit commodi pariatur, hic nihil unde incidunt iste eveniet nesciunt minima voluptatibus natus maiores voluptates aliquam architecto saepe ut nostrum, nemo ex. Asperiores, repellat? Suscipit, qui.</p>
                     </div>
-                    <div class="col col--6 fade-in">
+                    <div class="col col--6 fade-in slide-in from--right">
                         <h4>Alternatively, we can contact you:</h4>
                         <form class="contact-form">
                             <label for="contactName">Your Name</label>
@@ -70,6 +88,7 @@
 
     </footer>
     <script src="./js/nav.js"></script>
+    <script src="./js/dark-mode.js"></script>
     <script src="./js/transition.js"></script>
     <script src="./js/contact.js"></script>
 </body>
