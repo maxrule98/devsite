@@ -455,6 +455,14 @@ li {
 .bold {
     font-weight: 900;
 }
+
+.text--left {
+    text-align: left;
+}
+
+.text--center {
+    text-align: center;
+}
 :root {
     /*  Colours  */
     --lightest: rgb(255, 255, 255);
@@ -534,7 +542,7 @@ li {
 }
 
 .justify--center {
-    justify-content: flex-sta;
+    justify-content: center;
 }
 
 .align--start {
@@ -564,6 +572,7 @@ li {
 }
 
 .site-width {
+    width: 100%;
     max-width: var(--site-width);
     margin: 0 auto;
     padding: 0 var(--site-gutter);
@@ -772,6 +781,10 @@ li {
     font-size: 1.25em;
     outline: none;
 }
+
+.btn--nav__icon {
+    fill: var(--highlight);
+}
 header {
     top: 0;
     background: var(--lightest);
@@ -920,7 +933,7 @@ small {
 
 .card__icon {
     position: relative;
-    width: 3em;
+    width: 100px;
     height: auto;
     fill: var(--highlight);
 }

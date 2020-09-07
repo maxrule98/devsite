@@ -54,3 +54,7 @@
     font-size: 1.25em;
     outline: none;
 }
+
+.btn--nav__icon {
+    fill: var(--highlight);
+}

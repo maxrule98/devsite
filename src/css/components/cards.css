@@ -20,7 +20,7 @@
 
 .card__icon {
     position: relative;
-    width: 3em;
+    width: 100px;
     height: auto;
     fill: var(--highlight);
 }
