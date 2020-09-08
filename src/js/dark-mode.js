@@ -1,6 +1,7 @@
 const darkToggle = document.querySelector("#dark-mode");
 const header = document.querySelector("header");
-const navLinks = document.querySelector(".col--nav__links");
+const navLinks = document.querySelector(".nav__links");
+const navLink = document.querySelectorAll(".nav__link");
 const sectionLightest = document.querySelectorAll(".section--lightest");
 const sectionLight = document.querySelectorAll(".section--light");
 const colLightest = document.querySelectorAll(".col--lightest");
@@ -8,8 +9,6 @@ const colLight = document.querySelectorAll(".col--light");
 
 
 // DO THIS WITH LOCALSTORAGE INSTEAD
-
-
 
 
 // console.log(header);
@@ -26,6 +25,9 @@ function toggleDarkness() {
             } else {
                 return;
             }
+        });
+        navLink.forEach(function (el) {
+            el.classList.add("dark-mode");
         });
         sectionLight.forEach(function (el) {
             el.classList.add("dark-mode");
@@ -47,6 +49,9 @@ function toggleDarkness() {
             } else {
                 return;
             }
+        });
+        navLink.forEach(function (el) {
+            el.classList.remove("dark-mode");
         });
         sectionLight.forEach(function (el) {
             el.classList.remove("dark-mode");

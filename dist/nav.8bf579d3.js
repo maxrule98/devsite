@@ -128,16 +128,23 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 //     bar2.classList.toggle('open');
 // });
 var navBtn = document.querySelector(".btn--nav");
-var navLinks = document.querySelector(".nav");
+var navLinks = document.querySelector(".nav__links");
+var navOverlay = document.querySelector(".nav__overlay");
 navBtn.addEventListener("click", function () {
   navLinks.classList.toggle('hidden');
-
-  if (navLinks.classList.length === 3) {
-    navBtn.innerHTML = '<svg class="btn--nav__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>';
-  } else {
-    navBtn.innerHTML = '<svg class="btn--nav__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h13v-2H3v2zm0-5h10v-2H3v2zm0-7v2h13V6H3zm18 9.59L17.42 12 21 8.41 19.59 7l-5 5 5 5L21 15.59z"/></svg>';
-  }
+  navOverlay.classList.toggle('hidden');
 });
+navOverlay.addEventListener("click", function () {
+  navLinks.classList.add('hidden');
+  navOverlay.classList.toggle('hidden');
+}); // navBtn.addEventListener("click", () => {
+//     navLinks.classList.remove('hidden');
+//     if (navLinks.classList.length === 3) {
+//         navBtn.innerHTML = '<svg class="btn--nav__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>';
+//     } else {
+//         navBtn.innerHTML = '<svg class="btn--nav__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h13v-2H3v2zm0-5h10v-2H3v2zm0-7v2h13V6H3zm18 9.59L17.42 12 21 8.41 19.59 7l-5 5 5 5L21 15.59z"/></svg>';
+//     }
+// });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -166,7 +173,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49906" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56680" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -120,7 +120,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"js/dark-mode.js":[function(require,module,exports) {
 var darkToggle = document.querySelector("#dark-mode");
 var header = document.querySelector("header");
-var navLinks = document.querySelector(".col--nav__links");
+var navLinks = document.querySelector(".nav__links");
+var navLink = document.querySelectorAll(".nav__link");
 var sectionLightest = document.querySelectorAll(".section--lightest");
 var sectionLight = document.querySelectorAll(".section--light");
 var colLightest = document.querySelectorAll(".col--lightest");
@@ -139,6 +140,9 @@ function toggleDarkness() {
       } else {
         return;
       }
+    });
+    navLink.forEach(function (el) {
+      el.classList.add("dark-mode");
     });
     sectionLight.forEach(function (el) {
       el.classList.add("dark-mode");
@@ -160,6 +164,9 @@ function toggleDarkness() {
       } else {
         return;
       }
+    });
+    navLink.forEach(function (el) {
+      el.classList.remove("dark-mode");
     });
     sectionLight.forEach(function (el) {
       el.classList.remove("dark-mode");
@@ -213,7 +220,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49906" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56680" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -12,6 +12,7 @@
 
     /*  Layout  */
     --nav-height: 62px;
+    --nav-width: 275px;
     --site-width: 1500px;
     --site-gutter: 1em;
     --site-section-padding: 5em;
