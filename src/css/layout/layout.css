@@ -1,3 +1,10 @@
+.site-width {
+    width: 100%;
+    max-width: var(--site-width);
+    margin: 0 auto;
+    padding: 0 var(--site-gutter);
+}
+
 .site-width--cookies {
     max-width: var(--site-width);
     margin: 0 auto;
@@ -9,123 +16,19 @@
     bottom: 0;
 }
 
-.site-width {
-    width: 100%;
-    max-width: var(--site-width);
-    margin: 0 auto;
-    padding: 0 var(--site-gutter);
-}
-
 .site-width--nav {
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 var(--site-gutter);
 }
 
-.col-row {
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(12, minmax(5px, 1fr));
-}
 
-.col {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    grid-column: span 12;
-    border-radius: var(--border-radius);
-}
-
-.col--nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.col--nav__links {
-    height: 100vh;
-    justify-content: start;
-    padding: calc(var(--nav-height) + var(--site-section-padding)) 1em var(--site-section-padding) 1em;
-    box-shadow: var(--box-shadow);
-    background: var(--lightest);
-}
-
-.col--nav__links.dark-mode {
-    color: white;
-    background: var(--darkest);
-}
-
-.col--lightest {
-    padding: 1em;
-    background: var(--lightest);
-}
-
-.col--light {
-    padding: 1em;
-    background: var(--light);
-}
-
-.col--lightest.dark-mode {
-    color: white;
-    background: var(--darkest);
-}
-
-.col--light.dark-mode {
-    color: white;
-    background: var(--dark);
-}
-
-.transparent {
-    
-}
-
-@media (min-width: 800px) {
-    .col--1 {
-        grid-column: span 1;
+@media (max-width: 767px) {
+    .site-width {
+        padding: 0.5em;
     }
-    
-    .col--2 {
-        grid-column: span 2;
-    }
-    
-    .col--3 {
-        grid-column: span 3;
-    }
-    
-    .col--4 {
-        grid-column: span 4;
-    }
-    
-    .col--5 {
-        grid-column: span 5;
-    }
-    
-    .col--6 {
-        grid-column: span 6;
-    }
-    
-    .col--7 {
-        grid-column: span 7;
-    }
-    
-    .col--8 {
-        grid-column: span 8;
-    }
-    
-    .col--9 {
-        grid-column: span 9;
-    }
-    
-    .col--10 {
-        grid-column: span 10;
-    }
-    
-    .col--11 {
-        grid-column: span 11;
-    }
-    
-    .col--12 {
-        grid-column: span 12;
+    .site-width--nav {
+        padding: 0 0.5em;
     }
 }

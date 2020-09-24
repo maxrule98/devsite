@@ -130,6 +130,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var navBtn = document.querySelector(".btn--nav");
 var navLinks = document.querySelector(".nav__links");
 var navOverlay = document.querySelector(".nav__overlay");
+var header = document.querySelector("header");
 navBtn.addEventListener("click", function () {
   navLinks.classList.toggle('hidden');
   navOverlay.classList.toggle('hidden');
@@ -173,7 +174,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56680" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58104" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

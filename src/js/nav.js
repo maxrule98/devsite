@@ -12,6 +12,7 @@
 const navBtn = document.querySelector(".btn--nav");
 const navLinks = document.querySelector(".nav__links");
 const navOverlay = document.querySelector(".nav__overlay");
+const header = document.querySelector("header");
 
 navBtn.addEventListener("click", () => {
     navLinks.classList.toggle('hidden');

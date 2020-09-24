@@ -1,0 +1,13 @@
+.row {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(12, minmax(5px, 1fr));
+}
+
+.row--light {
+    background: var(--light);
+}
+
+.row--lightest {
+    background: var(--lightest);
+}

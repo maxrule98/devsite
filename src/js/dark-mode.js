@@ -1,4 +1,7 @@
+const bodyParser = require("body-parser");
+
 const darkToggle = document.querySelector("#dark-mode");
+const body = document.querySelector("body");
 const header = document.querySelector("header");
 const navLinks = document.querySelector(".nav__links");
 const navLink = document.querySelectorAll(".nav__link");
@@ -16,6 +19,7 @@ const colLight = document.querySelectorAll(".col--light");
 function toggleDarkness() {
     if (localStorage.darkmode === "On") {
         darkToggle.checked = true;
+        body.style.background = "var(--darkest)";
         header.classList.add("dark-mode");
         navLinks.classList.add("dark-mode");
         sectionLightest.forEach(function (el) {
@@ -40,6 +44,7 @@ function toggleDarkness() {
         });
     } else {
         darkToggle.checked = false;
+        body.style.background = "var(--lightest)";
         header.classList.remove("dark-mode");
         navLinks.classList.remove("dark-mode");
         sectionLightest.forEach(function (el) {
