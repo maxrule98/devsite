@@ -10,13 +10,13 @@
         background: var(--lightest);
         z-index: 3;
     }
+
+    .header__content {
+        padding: 0 1em;
+    }
     
-    header h4 {
-        display: inline;
-        bottom: 0;
-        line-height: auto;
+    header h6 {
         margin: 0;
-        padding: 0;
     }
     
     header.dark-mode {

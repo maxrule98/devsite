@@ -1,0 +1,34 @@
+table {
+    margin: 1em 0;
+    width: 100%;
+    border-spacing: 0px;
+    border: 1px solid gray;
+}
+
+tr:nth-child(odd) {
+    background: var(--light);
+}
+
+tr:nth-child(even) {
+    background: var(--lightest);
+}
+
+th {
+    padding: 2em 1em;
+    font-size: 1.25em;
+    color: white;
+    background: var(--highlight);
+}
+td {
+    padding: 1em;
+}
+
+td:nth-child(odd),
+th:nth-child(odd) {
+    text-align: start;
+}
+
+td:nth-child(even),
+th:nth-child(even) {
+    text-align: end;
+}

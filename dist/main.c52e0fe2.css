@@ -102,15 +102,6 @@ main {
     display: block;
 }
 
-/**
-* Correct the font size and margin on `h1` elements within `section` and
-* `article` contexts in Chrome, Firefox, and Safari.
-*/
-
-h1 {
-    font-size: 2em;
-}
-
 /* Grouping content
 ========================================================================== */
 
@@ -443,7 +434,6 @@ h4,
 h5,
 h6{
     font-family: 'Baloo Tammudu 2', cursive;
-    font-weight: 500;
     margin: 0.25em 0;
 }
 
@@ -468,11 +458,11 @@ h5 {
 }
 
 h6 {
-    font-size: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 p,
-a,
 li {
     color: rgb(125, 125, 125);
     font-size: 1em;
@@ -748,11 +738,15 @@ li {
 }
 
 .align--start {
-
+    align-items: flex-start;
 }
 
 .align--center {
     align-items: center;
+}
+
+.align--end {
+    align-items: flex-end;
 }
 
 .align--start {
@@ -918,13 +912,13 @@ li {
         background: var(--lightest);
         z-index: 3;
     }
+
+    .header__content {
+        padding: 0 1em;
+    }
     
-    header h4 {
-        display: inline;
-        bottom: 0;
-        line-height: auto;
+    header h6 {
         margin: 0;
-        padding: 0;
     }
     
     header.dark-mode {
@@ -1031,9 +1025,9 @@ small {
 }
 
 .card__icon {
+    display: block;
     position: relative;
-    width: 100%;
-    max-width: 100px;
+    width: 100px;
     height: auto;
     fill: var(--highlight);
 }
@@ -1069,6 +1063,40 @@ small {
         min-height: 60vh;
         background-image: linear-gradient(90deg, rgba(0,0,0,1), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
     }
+}
+table {
+    margin: 1em 0;
+    width: 100%;
+    border-spacing: 0px;
+    border: 1px solid gray;
+}
+
+tr:nth-child(odd) {
+    background: var(--light);
+}
+
+tr:nth-child(even) {
+    background: var(--lightest);
+}
+
+th {
+    padding: 2em 1em;
+    font-size: 1.25em;
+    color: white;
+    background: var(--highlight);
+}
+td {
+    padding: 1em;
+}
+
+td:nth-child(odd),
+th:nth-child(odd) {
+    text-align: start;
+}
+
+td:nth-child(even),
+th:nth-child(even) {
+    text-align: end;
 }
 /*  Global  */
 

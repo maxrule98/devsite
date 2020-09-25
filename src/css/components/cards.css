@@ -19,9 +19,9 @@
 }
 
 .card__icon {
+    display: block;
     position: relative;
-    width: 100%;
-    max-width: 100px;
+    width: 100px;
     height: auto;
     fill: var(--highlight);
 }

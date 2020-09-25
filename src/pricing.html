@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ontouchmove>
 <head>
+    <link rel="icon" href="../favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -11,12 +12,12 @@
     <header>
         <div class="site-width--nav">
             <div class="row">
-                <div class="col col--3 header__content">
-                    <div class="flex flex--row align--center">
+                <div class="col sm--12 md--12 lg--12 header__content">
+                    <div class="flex flex--row align--end">
                         <div class="nav__toggle">
                             <button class="btn btn--nav"><svg class="btn--nav__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
                         </div>
-                        <h4>MR.Dev</h4>
+                        <h6>MR.Dev</h6>
                     </div>
                 </div>
             </div>
@@ -44,48 +45,262 @@
         </div>
     </nav>
     <main>
-        <section>
+        <section class="section section--lightest">
             <div class="site-width">
                 <div class="row">
-                    <div class="col sm--12 md--6 lg--3 col--light align--center">
-                        <h1>Starter package</h1>
+                    <div class="col sm--12 md--12 lg--12 text--center fade-in slide-in from--bottom">
+                        <h1>Pricing</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam quos consequuntur aspernatur. Ut, reprehenderit! Numquam corrupti voluptates neque aperiam, suscipit nihil, non deleniti hic expedita perferendis recusandae similique autem ab animi facilis? Cupiditate repellendus quas obcaecati vitae unde! Esse quisquam sapiente assumenda quo, eaque nam quam vel aspernatur neque.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--light">
+            <div class="site-width">
+                <div class="row">
+                    <div class="col sm--12 md--6 lg--3 col--lightest align--center fade-in">
+                        <h3>Starter package</h3>
                         <p>Simple, static. Ideal for smaller businesses to display opening hours, locations and</p>
-                        <br>
-                        <br>
-                        <div class="flex flex--row">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><strong>Feature</strong></th>
+                                    <th>Included?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Responsibe, mobile ready design</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 2</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 3</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 4</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 5</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 6</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 7</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 8</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 9</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 10</td>
+                                    <td>✗</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex flex--row align--center">
                             <p>From:</p>
                             <h1 class="highlight">£299</h1>
                         </div>
+                        <form action="">
+                            <button class="btn btn--highlight btn--block">Get Started</button>
+                        </form>
                     </div>
-                    <div class="col sm--12 md--6 lg--3 col--light align--center">
-                        <h1>Basic package</h1>
+                    <div class="col sm--12 md--6 lg--3 col--lightest align--center fade-in">
+                        <h3>Basic package</h3>
                         <p>Simple, static. Ideal for smaller businesses to display opening hours, locations and</p>
-                        <br>
-                        <br>
-                        <div class="flex flex--row">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><strong>Feature</strong></th>
+                                    <th>Included?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Responsibe, mobile ready design</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 2</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 3</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 4</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 5</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 6</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 7</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 8</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 9</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 10</td>
+                                    <td>✗</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex flex--row align--center">
                             <p>From:</p>
-                            <h1 class="highlight">£499</h1>
+                            <h1 class="highlight">£299</h1>
                         </div>
+                        <form action="">
+                            <button class="btn btn--highlight btn--block">Get Started</button>
+                        </form>
                     </div>
-                    <div class="col sm--12 md--6 lg--3 col--light align--center">
-                        <h1>Advanced package</h1>
+                    <div class="col sm--12 md--6 lg--3 col--lightest align--center fade-in">
+                        <h3>Advanced package</h3>
                         <p>Simple, static. Ideal for smaller businesses to display opening hours, locations and</p>
-                        <br>
-                        <br>
-                        <div class="flex flex--row">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><strong>Feature</strong></th>
+                                    <th>Included?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Responsibe, mobile ready design</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 2</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 3</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 4</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 5</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 6</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 7</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 8</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 9</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 10</td>
+                                    <td>✗</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex flex--row align--center">
                             <p>From:</p>
-                            <h1 class="highlight">£799</h1>
+                            <h1 class="highlight">£299</h1>
                         </div>
+                        <form action="">
+                            <button class="btn btn--highlight btn--block">Get Started</button>
+                        </form>
                     </div>
-                    <div class="col sm--12 md--6 lg--3 col--light align--center">
-                        <h1>Premium package</h1>
+                    <div class="col sm--12 md--6 lg--3 col--lightest align--center fade-in">
+                        <h3>Premium package</h3>
                         <p>Simple, static. Ideal for smaller businesses to display opening hours, locations and</p>
-                        <br>
-                        <br>
-                        <div class="flex flex--row">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><strong>Feature</strong></th>
+                                    <th>Included?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Responsibe, mobile ready design</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 2</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 3</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 4</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 5</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 6</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 7</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 8</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 9</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Benefit 10</td>
+                                    <td>✗</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex flex--row align--center">
                             <p>From:</p>
-                            <h1 class="highlight">£999</h1>
+                            <h1 class="highlight">£299</h1>
                         </div>
+                        <form action="">
+                            <button class="btn btn--highlight btn--block">Get Started</button>
+                        </form>
                     </div>
                 </div>
             </div>
