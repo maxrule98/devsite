@@ -1,7 +1,19 @@
 .cookies {
     display: none;
+    width: 100%;
+    padding: 0;
+}
+
+.cookies.row {
+    gap: 0;
 }
 
 .cookies.appear {
     display: unset;
+}
+
+#cookieAccept,
+#cookieReject {
+    color: white;
+    display: inline-block;
 }

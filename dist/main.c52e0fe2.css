@@ -4,7 +4,6 @@
     display: inline-block;
     width: 50px;
     height: 34px;
-    margin: var(--site-gutter);
   }
   
   /* Hide default HTML checkbox */
@@ -719,6 +718,7 @@ li {
 .flex {
     display: flex;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 .flex--row {
@@ -757,13 +757,13 @@ li {
     align-items: stretch;
 }
 .site-width {
-    width: 100%;
     max-width: var(--site-width);
     margin: 0 auto;
     padding: 0 var(--site-gutter);
 }
 
 .site-width--cookies {
+    width: 100%;
     max-width: var(--site-width);
     margin: 0 auto;
     padding: 0 var(--site-gutter);
@@ -804,6 +804,10 @@ li {
     background: var(--lightest);
 }
 
+.overlays {
+    z-index: 100;
+}
+
 .section {
     padding: var(--site-section-padding) 0;
     display: flex;
@@ -839,6 +843,7 @@ li {
     background: var(--dark);
 }
 .btn {
+    margin-top: 1em;
     border-radius: var(--border-radius);
     background: none;
     border: none;
@@ -927,6 +932,8 @@ li {
     }
     
     .nav__links {
+        display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
@@ -954,6 +961,10 @@ li {
         align-items: center;
         padding: calc(var(--site-gutter) * 2) var(--site-gutter);
         
+    }
+
+    .nav__link:nth-last-child() {
+        background: pink;
     }
 
     .nav__link:hover {
@@ -985,7 +996,6 @@ li {
         transition: all var(--transition--nav);
     }
 form {
-    margin: 1em 0 0 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1025,9 +1035,9 @@ small {
 }
 
 .card__icon {
-    display: block;
     position: relative;
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     height: auto;
     fill: var(--highlight);
 }
@@ -1041,10 +1051,22 @@ small {
 } */
 .cookies {
     display: none;
+    width: 100%;
+    padding: 0;
+}
+
+.cookies.row {
+    gap: 0;
 }
 
 .cookies.appear {
     display: unset;
+}
+
+#cookieAccept,
+#cookieReject {
+    color: white;
+    display: inline-block;
 }
 .hero {
     background-repeat: no-repeat;
@@ -1064,11 +1086,15 @@ small {
         background-image: linear-gradient(90deg, rgba(0,0,0,1), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
     }
 }
+table, th, td {
+    border: 1px solid var(--highlight);
+  }
+
 table {
     margin: 1em 0;
+    min-width: min-content;
     width: 100%;
     border-spacing: 0px;
-    border: 1px solid gray;
 }
 
 tr:nth-child(odd) {
@@ -1086,6 +1112,7 @@ th {
     background: var(--highlight);
 }
 td {
+    color: var(--darkest);
     padding: 1em;
 }
 

@@ -30025,7 +30025,6 @@ function toggleDarkness() {
     navLinks.classList.add("dark-mode");
     sectionLightest.forEach(function (el) {
       if (el.id !== "hero") {
-        console.log(el);
         el.classList.add("dark-mode");
       } else {
         return;
@@ -30050,7 +30049,6 @@ function toggleDarkness() {
     navLinks.classList.remove("dark-mode");
     sectionLightest.forEach(function (el) {
       if (el.id !== "hero") {
-        console.log(el);
         el.classList.remove("dark-mode");
       } else {
         return;
@@ -30111,7 +30109,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51549" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55301" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

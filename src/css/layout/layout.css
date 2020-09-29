@@ -1,11 +1,11 @@
 .site-width {
-    width: 100%;
     max-width: var(--site-width);
     margin: 0 auto;
     padding: 0 var(--site-gutter);
 }
 
 .site-width--cookies {
+    width: 100%;
     max-width: var(--site-width);
     margin: 0 auto;
     padding: 0 var(--site-gutter);

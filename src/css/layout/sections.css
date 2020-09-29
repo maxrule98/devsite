@@ -1,3 +1,7 @@
+.overlays {
+    z-index: 100;
+}
+
 .section {
     padding: var(--site-section-padding) 0;
     display: flex;

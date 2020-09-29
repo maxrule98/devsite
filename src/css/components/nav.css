@@ -25,6 +25,8 @@
     }
     
     .nav__links {
+        display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
@@ -52,6 +54,10 @@
         align-items: center;
         padding: calc(var(--site-gutter) * 2) var(--site-gutter);
         
+    }
+
+    .nav__link:nth-last-child() {
+        background: pink;
     }
 
     .nav__link:hover {

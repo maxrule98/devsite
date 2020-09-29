@@ -1,4 +1,5 @@
 .btn {
+    margin-top: 1em;
     border-radius: var(--border-radius);
     background: none;
     border: none;

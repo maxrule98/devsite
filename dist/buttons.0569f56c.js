@@ -117,29 +117,61 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/cookies.js":[function(require,module,exports) {
-var cookieContainer = document.querySelector('.cookies');
-var cookieAccept = document.querySelector('#cookieAccept');
-var cookieReject = document.querySelector('#cookieReject'); // cookieContainer.addEventListener("click", () => {
-//     event.preventDefault();
-// });
+})({"js/buttons.js":[function(require,module,exports) {
+var btn = document.querySelectorAll(".btn--highlight");
+btn.forEach(function (el) {
+  var height = el.clientHeight;
+  var width = el.clientWidth;
+  el.addEventListener('mousemove', handleMove);
+  /* Define function a */
 
-cookieAccept.addEventListener("click", function () {
-  event.preventDefault();
-  console.log('Cookies Accepted');
-  cookieContainer.classList.remove("appear");
-  localStorage.setItem("cookiesAccepted", "true");
-});
-cookieReject.addEventListener("click", function () {
-  event.preventDefault();
-  console.log('Cookies Rejected');
-  cookieContainer.classList.remove("appear");
-});
-setTimeout(function () {
-  if (!localStorage.getItem("cookiesAccepted")) {
-    cookieContainer.classList.add("appear");
+  function handleMove(e) {
+    /*
+        * Get position of mouse cursor
+        * With respect to the element
+        * On mouseover
+        */
+
+    /* Store the x position */
+    var xVal = e.layerX;
+    /* Store the y position */
+
+    var yVal = e.layerY;
+    /*
+        * Calculate rotation valuee along the Y-axis
+        * Here the multiplier 20 is to
+        * Control the rotation
+        * You can change the value and see the results
+        */
+
+    var yRotation = 20 * ((xVal - width / 2) / width);
+    /* Calculate the rotation along the X-axis */
+
+    var xRotation = -20 * ((yVal - height / 2) / height);
+    /* Generate string for CSS transform property */
+
+    var string = 'perspective(500px) scale(1.1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
+    /* Apply the calculated transformation */
+
+    el.style.transform = string;
   }
-}, 2000);
+  /* Add listener for mouseout event, remove the rotation */
+
+
+  el.addEventListener('mouseout', function () {
+    el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)';
+  });
+  /* Add listener for mousedown event, to simulate click */
+
+  el.addEventListener('mousedown', function () {
+    el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)';
+  });
+  /* Add listener for mouseup, simulate release of mouse click */
+
+  el.addEventListener('mouseup', function () {
+    el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)';
+  });
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -344,5 +376,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/cookies.js"], null)
-//# sourceMappingURL=/cookies.ad662d52.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/buttons.js"], null)
+//# sourceMappingURL=/buttons.0569f56c.js.map

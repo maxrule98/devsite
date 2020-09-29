@@ -1,8 +1,12 @@
+table, th, td {
+    border: 1px solid var(--highlight);
+  }
+
 table {
     margin: 1em 0;
+    min-width: min-content;
     width: 100%;
     border-spacing: 0px;
-    border: 1px solid gray;
 }
 
 tr:nth-child(odd) {
@@ -20,6 +24,7 @@ th {
     background: var(--highlight);
 }
 td {
+    color: var(--darkest);
     padding: 1em;
 }
 
