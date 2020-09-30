@@ -20,12 +20,12 @@
 
 .card__icon {
     position: relative;
-    width: 100%;
-    max-width: 100px;
+    width: 100px;
     height: auto;
     fill: var(--highlight);
 }
 
+.card h4,
 .card p {
     margin-bottom: 3em;
 }

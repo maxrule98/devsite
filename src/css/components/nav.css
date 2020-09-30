@@ -16,7 +16,7 @@
     }
     
     header h6 {
-        margin: 0;
+        margin: 0 0.5em;
     }
     
     header.dark-mode {
@@ -45,7 +45,6 @@
     }
     
     .nav__links.dark-mode {
-        color: white;
         background: var(--darkest);
     }
 
@@ -81,10 +80,10 @@
         height: 100vh;
         z-index: 1;
         background: rgba(0, 0, 0, 0.3);
-        transition: all var(--transition--nav);
+        transition: all var(--transition--hover);
     }
 
     .nav__overlay.hidden {
         display: none;
-        transition: all var(--transition--nav);
+        transition: all var(--transition--hover);
     }

@@ -12,6 +12,10 @@
     display: unset;
 }
 
+.cookies label:nth-of-type(even) {
+    margin: 0 0.5em;
+}
+
 #cookieAccept,
 #cookieReject {
     color: white;

@@ -1,11 +1,11 @@
 .fade-in {
     opacity: 0;
-    transition: opacity 375Ms ease-in;
+    transition: all var(--transition--hover);
 }
 
 .fade-in.appear {
     opacity: 1;
-    transition: opacity 375Ms ease-in;
+    transition: all var(--transition--hover);
 }
 
 .from--left {

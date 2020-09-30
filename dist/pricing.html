@@ -32,13 +32,13 @@
                     <a class="nav__link" href="/portfolio">Our Portfolio</a>
                     <a class="nav__link" href="/contact">Contact Us</a>
                     <a class="nav__link" href="/blog">Our Blog</a>
-                    <div class="flex flex--row">
+                    <a class="nav__link">
+                        Dark mode
                         <label class="dark__switch">
                             <input type="checkbox" id="dark-mode">
                             <span class="dark__slider round"></span>
                         </label>
-                        <p>Dark mode (Experimental)</p>
-                    </div>
+                    </a>
                 </div>
                 <div class="nav__overlay hidden"></div>
             </div>
@@ -309,8 +309,45 @@
     <footer>
 
     </footer>
+
+    <section class="overlays">
+        <section class="section section--dark cookies">
+            <div class="site-width">
+                <div class="row align--center">
+                    <div class="col sm--12 md--6 lg--6">
+                        <h4>This website uses cookies</h4>
+                        <p style="margin:0">We use cookies to see how our visitors interact with our website, and provide a better experience.</p>
+                    </div>
+                    <div class="col sm--12 md--6 lg--6">
+                        <form action="">
+                            <div class="flex flex--row">
+                                <label for="">
+                                    <input type="checkbox" name="" id="">
+                                    Necessary
+                                </label>
+                                <label for="">
+                                    <input type="checkbox" name="" id="">
+                                    Preferences
+                                </label>
+                                <label for="">
+                                    <input type="checkbox" name="" id="">
+                                    Statistics
+                                </label>
+                            </div>
+                            <div class="flex flex--row">
+                                <button class="btn btn--highlight" id="cookieAccept">I accept</button>
+                                <button class="btn" id="cookieReject">I do not accept</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
     <script src="/nav.8bf579d3.js"></script>
-    <script src="/dark-mode.ea51613a.js"></script>
     <script src="/transition.f6bb2fc7.js"></script>
+    <script src="/cookies.ad662d52.js"></script>
+    <script src="/dark-mode.ea51613a.js"></script>
 </body>
 </html>

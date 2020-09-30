@@ -4,6 +4,7 @@
     display: inline-block;
     width: 50px;
     height: 34px;
+    margin-left: auto;
   }
   
   /* Hide default HTML checkbox */
@@ -31,7 +32,7 @@
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
+    left: 5px;
     bottom: 4px;
     background-color: white;
     -webkit-transition: .4s;
@@ -39,11 +40,11 @@
   }
   
   input:checked + .dark__slider {
-    background-color: #2196F3;
+    background-color: var(--highlight-hover);
   }
   
   input:focus + .dark__slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px var(--highlight-hover);
   }
   
   input:checked + .dark__slider:before {
@@ -506,12 +507,12 @@ li {
 }
 .fade-in {
     opacity: 0;
-    transition: opacity 375Ms ease-in;
+    transition: all var(--transition--hover);
 }
 
 .fade-in.appear {
     opacity: 1;
-    transition: opacity 375Ms ease-in;
+    transition: all var(--transition--hover);
 }
 
 .from--left {
@@ -757,6 +758,7 @@ li {
     align-items: stretch;
 }
 .site-width {
+    width: 100%;
     max-width: var(--site-width);
     margin: 0 auto;
     padding: 0 var(--site-gutter);
@@ -792,7 +794,7 @@ li {
 }
 .row {
     display: grid;
-    gap: 1em;
+    gap: 0.5em;
     grid-template-columns: repeat(12, minmax(5px, 1fr));
 }
 
@@ -844,7 +846,6 @@ li {
 }
 .btn {
     margin-top: 1em;
-    border-radius: var(--border-radius);
     background: none;
     border: none;
     cursor: pointer;
@@ -923,7 +924,7 @@ li {
     }
     
     header h6 {
-        margin: 0;
+        margin: 0 0.5em;
     }
     
     header.dark-mode {
@@ -952,7 +953,6 @@ li {
     }
     
     .nav__links.dark-mode {
-        color: white;
         background: var(--darkest);
     }
 
@@ -988,12 +988,12 @@ li {
         height: 100vh;
         z-index: 1;
         background: rgba(0, 0, 0, 0.3);
-        transition: all var(--transition--nav);
+        transition: all var(--transition--hover);
     }
 
     .nav__overlay.hidden {
         display: none;
-        transition: all var(--transition--nav);
+        transition: all var(--transition--hover);
     }
 form {
     display: flex;
@@ -1036,12 +1036,12 @@ small {
 
 .card__icon {
     position: relative;
-    width: 100%;
-    max-width: 100px;
+    width: 100px;
     height: auto;
     fill: var(--highlight);
 }
 
+.card h4,
 .card p {
     margin-bottom: 3em;
 }
@@ -1061,6 +1061,10 @@ small {
 
 .cookies.appear {
     display: unset;
+}
+
+.cookies label:nth-of-type(even) {
+    margin: 0 0.5em;
 }
 
 #cookieAccept,
