@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production npm run build && node services/server",
-    "build": "node services/build",
-    "dev": "node services/server"
+    "build-watch": "parcel watch ./src/*.html",
+    "start-watch": "node services/server.js",
+    "dev": "npm run start-watch & npm run build-watch",
+    "build": "parcel build ./src/*.html",
+    "start": "npm run build && node services/server.js"
   },
   "author": "",
   "license": "ISC",
